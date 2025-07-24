@@ -7,7 +7,7 @@ import { Iuser } from '../iuser';
 })
 export class CrudService {
 
-  base_url : string = "http://localhost:3000/Users";
+  base_url : string = "https://json-vercel-aa552v9vd-ayesha3456s-projects.vercel.app/Users";
 
   constructor(private http:HttpClient) { }
 
