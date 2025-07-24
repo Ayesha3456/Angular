@@ -1,0 +1,63 @@
+<div class="m-3">
+    <h3 class="text-primary m-3">String Type Pipes</h3>
+    <h4>1. UpperCase Pipe : {{angularPipes | uppercase}}</h4>
+    <h4>2. LowerCase Pipe : {{angularPipes | lowercase}}</h4>
+    <h4>3. TitleCase Pipe : {{angularPipes | titlecase}}</h4>
+    <h4>4. Slice Pipe(4:8) : {{angularPipes | slice : 4:8}}</h4>
+    <h4>4. Slice Pipe(4) : {{angularPipes | slice : 4}}</h4>
+    <h4>4. Slice Pipe(4:-10) : {{angularPipes | slice : 4:-10}}</h4>
+    <h4>4. Slice Pipe(-10) : {{angularPipes | slice : -10}}</h4>
+    <h4>4. Slice Pipe(1:3) : {{[1,2,3,4,5,6] | slice : 1:3}}</h4>
+    <h4>5. JSON Pipe : {{personData | json}}</h4>
+    <pre>5. JSON Pipe : {{personData | json}}</pre>
+
+    <hr>
+
+    <h3 class="text-primary m-3">Number Type Pipes</h3>
+    <h4>6.Date Pipe : {{currentDate | date}}</h4>
+    <h4>6.Short Pipe : {{currentDate | date : 'short'}}</h4>
+    <h4>6.Short Date Pipe : {{currentDate | date : 'shortDate'}}</h4>
+    <h4>6.Short Time Pipe : {{currentDate | date : 'shortTime'}}</h4>
+    <h4>6.Medium Pipe : {{currentDate | date : 'medium'}}</h4>
+    <h4>6.Medium Date Pipe : {{currentDate | date : 'mediumDate'}}</h4>
+    <h4>6.Medium Time Pipe : {{currentDate | date : 'mediumTime'}}</h4>
+    <h4>6.Date Pipe : {{currentDate | date | uppercase}}</h4>
+    
+    <hr>
+
+    <h4>7.Decimal Pipe : {{3.141592653 | number: '1.3'}}</h4>
+    <h4>7.Decimal Pipe : {{3.141592653 | number: '2.3'}}</h4>
+    <h4>7.Decimal Pipe : {{3.14 | number: '2.5'}}</h4>
+
+    <hr>
+
+    <h4>8.Percent Pipe : {{0.25 | percent}}</h4>
+    <h4>9.Currency Pipe : {{123.20 | currency}}</h4>
+    <h4>9.Currency Pipe : {{123.20 | currency : 'EUR'}}</h4>
+    <h4>9.Currency Pipe : {{123.20 | currency : 'INR'}}</h4>
+
+    <hr>
+
+    <h3 class="text-primary m-3">Async Pipes</h3>
+    <h4>10.Async Pipe : 
+        <ul>
+            @for(item of items | async; track item) {
+               <li>{{item}}</li> 
+            }
+            
+        </ul>
+    </h4>
+
+    <hr>
+
+    <h3 class="text-primary m-3">Custom Pipes</h3>
+    <h6>Mobile Number : {{mobileNumber | custom}}</h6>
+    <h4>6.Custom Date Pipe : {{currentDate | custom}}</h4>
+
+    <hr>
+
+    <h6>Pure Pipe : Square of 6 is {{ 6 | pure}}</h6>
+    <h6>Impure Pipe : {{ currentDate | impure}}</h6>
+
+    <hr>
+</div>

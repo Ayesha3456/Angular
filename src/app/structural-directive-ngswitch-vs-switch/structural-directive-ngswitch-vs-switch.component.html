@@ -1,0 +1,36 @@
+<div class="row text-center">
+    <div class="col-12 m-3">
+        <h3>Example of ngSwich vs Switch</h3>
+    </div>
+</div>
+
+<div class="row text-center">
+    <div class="col-12">
+        <button class="btn btn-success m-1" (click)="set(1)">1st Grade</button>
+        <button class="btn btn-primary m-1" (click)="set(2)">2nd Grade</button>
+        <button class="btn btn-warning m-1" (click)="set(3)">3rd Grade</button>
+    </div>
+    <!-- <div [ngSwitch]="grade" class="m-3">
+        <div *ngSwitchCase="1">Congrats on your outstanding achievement - First Class</div>
+        <div *ngSwitchCase="2">Congrats on your outstanding achievement - Second Class</div>
+        <div *ngSwitchCase="3">Congrats on your outstanding achievement - Third Class</div>
+        <div *ngSwitchDefault>No Result Found.....</div>
+    </div> -->
+    <div class="m-3">
+        @switch (grade) {
+            @case(1){
+                Congrats on your outstanding achievement - First Class
+            }
+            @case(2){
+                Congrats on your outstanding achievement - Second Class
+            }
+            @case(3){
+                Congrats on your outstanding achievement - Third Class
+            }
+            @default {
+                No Result Found.....
+            }
+        }
+    </div>
+</div>
+<!-- Advantage of using @switch are  &  -->

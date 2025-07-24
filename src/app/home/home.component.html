@@ -1,0 +1,6 @@
+<h2>Welcome to Home Component</h2>
+
+<input [(ngModel)]="name" placeholder="Enter your name" />
+<p>Hello {{ name }}!</p>
+
+<button [disabled]="!name" (click)="greet()">Greet</button>

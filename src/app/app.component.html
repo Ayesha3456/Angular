@@ -1,0 +1,76 @@
+<!-- Angular SPA Example -->
+<!-- <h1>Simple Angular SPA</h1>
+<nav>
+  <a class="btn" role="button" routerLink="/home">Home</a> |
+  <a class="btn" role="button" routerLink="/about">About</a>
+</nav>
+<hr /> -->
+
+<!-- <app-data-binding></app-data-binding> -->
+<!-- <app-directives></app-directives> -->
+<!-- <app-structural-directive-ngif-vs-if></app-structural-directive-ngif-vs-if> -->
+<!-- <app-structural-directive-ngfor-vs-for></app-structural-directive-ngfor-vs-for> -->
+<!-- <app-structural-directive-ngswitch-vs-switch></app-structural-directive-ngswitch-vs-switch> -->
+<!-- <app-attribute-directives></app-attribute-directives> -->
+<!-- <app-signals></app-signals> -->
+<!-- <app-linked-signal></app-linked-signal> -->
+
+<nav class="navbar navbar-expand-lg bg-body-secondary">
+  <div class="container-fluid">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="user" routerLinkActive="active">User</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['profile']" routerLinkActive="active">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/data-binding" routerLinkActive="active">Data Binding</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Directives</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" routerLink="/structural-directive" routerLinkActive="active">Structural Directive</a></li>
+            <li><a class="dropdown-item" routerLink="/attribute-directive" routerLinkActive="active">Attribute Directive</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['built-in-pipes']" routerLinkActive="active">Built In Pipes</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Forms</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" routerLink="/tdf" routerLinkActive="active">TDF</a></li>
+            <li><a class="dropdown-item" routerLink="/rf" routerLinkActive="active">RF</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['crud']" routerLinkActive="active">CRUD</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['resourceapi']" routerLinkActive="active">Resource</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['parent']" routerLinkActive="active">Parent</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['storage']" routerLinkActive="active">Storage</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

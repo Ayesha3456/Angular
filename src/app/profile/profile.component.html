@@ -1,0 +1,23 @@
+<div class="m-3">
+    <!-- Sharing Business Logic -->
+    <!-- @if(isEligible){
+        <h4 class="text-success">You are eligible for a primium Subscription</h4>
+    } @else {
+        <h4 class="text-danger">You are not eligible for a primium Subscription</h4>
+    } -->
+    <!-- Sharing Data -->
+    <!-- <ul>
+        <li>Id : {{dummyData.id}}</li>
+        <li>Name : {{dummyData.name}}</li>
+        <li>UserName : {{dummyData.username}}</li>
+        <li>Email : {{dummyData.email}}</li>
+    </ul> -->
+
+    <!-- Interaction with api -->
+    <ul *ngFor="let data of apiData">
+        <li>Id : {{data.id}}</li>
+        <li>Name : {{data.name}}</li>
+        <li>UserName : {{data.username}}</li>
+        <li>Email : {{data.email}}</li>
+    </ul>
+</div>
