@@ -7,7 +7,7 @@ import { Iuser } from '../iuser';
 })
 export class CrudService {
 
-  base_url : string = "./assets/db.json";
+  base_url : string = "https://json-backend-jxrq.onrender.com/Users";
 
   constructor(private http:HttpClient) { }
 
