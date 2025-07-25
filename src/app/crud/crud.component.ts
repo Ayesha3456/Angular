@@ -23,9 +23,9 @@ export class CrudComponent implements OnInit{
   }
 
   getAllData(){
-    this.crud.getData().subscribe(res => {
-      this.apiData = res;
-    })
+    this.crud.getData().subscribe((res: any) => {
+      this.apiData = res.Users || res;
+    });
   }
 
   addNewUser(){
